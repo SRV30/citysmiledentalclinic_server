@@ -45,6 +45,6 @@ router
 
 router
   .route("/admin/create/user")
-  .post(isAuthenticatedUser, authorizeRoles("admin"), createUser);
+  .post(createUser);
 
 module.exports = router;
